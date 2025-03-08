@@ -3,8 +3,8 @@
 ### Smart Manufacturing Engineering Major
 in Changwon National University
 
-### SKID - Korean Formula SAE Team
-P.R Dept & FS-24 Electric
+### SKID: Formula Student Team @skid_cwnu
+Marketing Lead & FS-24 Electric
 in Changwon National University
 
 ### Social Platform
