@@ -1,5 +1,9 @@
 ## Lim Chae Won
 
+![ROS](https://img.shields.io/badge/ROS-Noetic-blue)
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![C++](https://img.shields.io/badge/C++-14-blue)
+
 ### Smart Manufacturing Engineering Major
 in Changwon National University
 
