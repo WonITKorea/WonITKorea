@@ -1,4 +1,4 @@
-## Lim Chae Won
+## Lim Chaewon
 
 ### Smart Manufacturing Engineering Major
 at Changwon National University
