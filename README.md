@@ -7,8 +7,6 @@ at Changwon National University
 Marketing Lead & EFS-25 Electric
 in Changwon National University
 
-### Social Platform
-Instagram 📷 [@WonPicKorea](https://www.instagram.com/wonpickorea/)
 <!--
 **WonITKorea/WonITKorea** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
