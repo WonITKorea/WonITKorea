@@ -1,6 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3267ff"/><stop offset="1" stop-color="#00a5a8"/></linearGradient></defs>
-  <rect width="64" height="64" rx="18" fill="url(#g)"/>
-  <path d="M39.5 20.5c-2-2-4.4-3-7.2-3-7 0-11.8 5.5-11.8 14.5s4.8 14.5 11.8 14.5c3 0 5.6-1 7.7-3.2l-3.8-4.5c-1.1 1.2-2.4 1.8-4 1.8-3.3 0-5.5-3.1-5.5-8.6 0-5.4 2.1-8.5 5.5-8.5 1.5 0 2.8.6 3.9 1.7z" fill="#fff"/>
-  <path d="M41 18h6v23h-6z" fill="#fff" opacity=".92"/>
-</svg>
+
+const root=document.documentElement;
+const themeBtn=document.getElementById('themeToggle');
+const langBtn=document.getElementById('langToggle');
+const nav=document.getElementById('navMenu');
+const navBtn=document.getElementById('navToggle');
+let theme=localStorage.getItem('cw-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+let lang=localStorage.getItem('cw-lang')||'en';
+function applyTheme(){root.dataset.theme=theme;if(themeBtn)themeBtn.textContent=theme==='dark'?'☀':'◐'}
+function applyLang(){root.dataset.lang=lang;root.lang=lang==='ko'?'ko':'en';if(langBtn)langBtn.textContent=lang==='en'?'KR':'EN'}
+if(themeBtn)themeBtn.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';localStorage.setItem('cw-theme',theme);applyTheme()});
+if(langBtn)langBtn.addEventListener('click',()=>{lang=lang==='en'?'ko':'en';localStorage.setItem('cw-lang',lang);applyLang()});
+if(navBtn)navBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===document.body.dataset.page)a.classList.add('active')});
+document.querySelectorAll('[data-year]').forEach(x=>x.textContent=new Date().getFullYear());
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function mountLinkedIn(){const stage=document.getElementById('linkedinStage');if(!stage)return;const f=document.createElement('iframe');f.title='Chae Won Lim LinkedIn profile badge';f.srcdoc=`<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;height:100%;display:grid;place-items:center;background:transparent;overflow:hidden}.badge-base{margin:auto}</style></head><body><script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"><\/script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="chae-won-lim" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/chae-won-lim/">Chae Won Lim<\/a><\/div></body></html>`;stage.appendChild(f)}
+mountLinkedIn();applyTheme();applyLang();
+const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightboxImg');
+if(lb&&lbImg){document.querySelectorAll('.gallery-item img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open')}));lb.addEventListener('click',e=>{if(e.target===lb||e.target.closest('button'))lb.classList.remove('open')});document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')})}
