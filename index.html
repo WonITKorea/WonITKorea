@@ -1,3 +1,18 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chae Won Lim — AI and robotics researcher at Changwon National University, working on multi-agent reinforcement learning, Physical AI, robot learning, and intelligent robotic systems." />
+  <meta name="theme-color" content="#0b1220" />
+  <meta property="og:title" content="Chae Won Lim | AI & Robotics Researcher" />
+  <meta property="og:description" content="Research portfolio of Chae Won Lim — Multi-Agent RL, Physical AI, robot learning, and intelligent systems." />
+  <meta property="og:type" content="website" />
+  <title>Chae Won Lim | AI & Robotics Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
 :root {
   --bg: #f7f9fc;
   --surface: #ffffff;
@@ -240,3 +255,420 @@ img { max-width: 100%; display: block; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">CL</span>
+        <span class="brand-copy">
+          <strong>Chae Won Lim</strong>
+          <small>AI · Robotics · Research</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#research" data-i18n="navResearch">Research</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#publications" data-i18n="navPublications">Publications</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <div class="nav-actions">
+          <button class="icon-button" id="langToggle" type="button" aria-label="Switch language">KR</button>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <span id="themeIcon">◐</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">AI & Robotics Researcher · Changwon, Korea</p>
+          <h1>
+            <span data-i18n="heroLine1">Building intelligent systems</span>
+            <span class="gradient-text" data-i18n="heroLine2">that sense, learn, and act.</span>
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            I study how learning-based agents can make robust decisions in the physical world, with interests spanning multi-agent reinforcement learning, Physical AI, robot learning, and autonomous robotic systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research" data-i18n="exploreResearch">Explore my research</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/chae-won-lim/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label" data-i18n="affiliationLabel">Affiliation</span>
+              <strong data-i18n="affiliationValue">Changwon National University · IRAS Lab</strong>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="focusLabel">Current focus</span>
+              <strong data-i18n="focusValue">Multi-Agent RL · Physical AI</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal reveal-delay" aria-label="Profile summary">
+          <div class="profile-visual">
+            <div class="profile-ring ring-one"></div>
+            <div class="profile-ring ring-two"></div>
+            <div class="profile-initials">CWL</div>
+          </div>
+          <div class="profile-card-body">
+            <div class="status"><span></span><span data-i18n="statusText">Researching intelligent physical systems</span></div>
+            <h2>Chae Won Lim <span>임채원</span></h2>
+            <p data-i18n="profileTagline">Researcher working at the intersection of AI, robotics, and autonomous decision-making.</p>
+            <div class="profile-links">
+              <a href="https://sites.google.com/view/iras-cwnu/" target="_blank" rel="noopener">IRAS Lab ↗</a>
+              <a href="#publications" data-i18n="selectedWork">Selected work ↓</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+          <h2 data-i18n="aboutTitle">Research at the boundary between intelligence and the physical world.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p data-i18n="aboutP1">
+            I am an AI and robotics researcher at Changwon National University. My work focuses on learning-based decision-making for autonomous systems, especially problems where multiple agents must collaborate under uncertainty.
+          </p>
+          <p data-i18n="aboutP2">
+            I am particularly interested in making AI useful beyond simulation: connecting perception, reasoning, control, and real robotic hardware so that intelligent agents can operate reliably in dynamic environments.
+          </p>
+          <div class="fact-grid">
+            <article class="fact-card">
+              <span class="fact-number">2026–28</span>
+              <span class="fact-label" data-i18n="factEducation">Graduate study at CWNU</span>
+            </article>
+            <article class="fact-card">
+              <span class="fact-number">MARL</span>
+              <span class="fact-label" data-i18n="factMARL">Multi-agent source localization</span>
+            </article>
+            <article class="fact-card">
+              <span class="fact-number">AI × Robot</span>
+              <span class="fact-label" data-i18n="factPhysical">Physical intelligence & control</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow" data-i18n="researchEyebrow">Research</p>
+          <h2 data-i18n="researchTitle">What I am exploring</h2>
+          <p data-i18n="researchIntro">My current interests center on learning-enabled autonomy: how robots can understand complex environments, coordinate with one another, and improve through interaction.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span class="card-index">01</span>
+            <div class="research-icon">◎</div>
+            <h3 data-i18n="r1Title">Multi-Agent Reinforcement Learning</h3>
+            <p data-i18n="r1Text">Scalable cooperation and decentralized decision-making for multiple autonomous agents operating under partial observations.</p>
+            <div class="tag-row"><span>MARL</span><span>Attention</span><span>Decentralized Control</span></div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">02</span>
+            <div class="research-icon">◇</div>
+            <h3 data-i18n="r2Title">Physical AI & Robot Learning</h3>
+            <p data-i18n="r2Text">Connecting foundation models, learned world representations, and robot policies to enable adaptable physical-world behavior.</p>
+            <div class="tag-row"><span>VLA</span><span>World Models</span><span>Imitation / RL</span></div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">03</span>
+            <div class="research-icon">⌁</div>
+            <h3 data-i18n="r3Title">Robotic Perception & 3D Mapping</h3>
+            <p data-i18n="r3Text">RGB-D perception, multi-view reconstruction, and robot-camera integration for mapping and interaction with real-world surfaces.</p>
+            <div class="tag-row"><span>ROS 2</span><span>RGB-D</span><span>Open3D</span></div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">04</span>
+            <div class="research-icon">▦</div>
+            <h3 data-i18n="r4Title">Vision for Intelligent Manufacturing</h3>
+            <p data-i18n="r4Text">Computer-vision methods for detecting manufacturing defects, including deep-learning-based fault detection in 3D printing.</p>
+            <div class="tag-row"><span>YOLO</span><span>Computer Vision</span><span>Smart Manufacturing</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="experience">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow" data-i18n="experienceEyebrow">Experience & Education</p>
+          <h2 data-i18n="experienceTitle">A path across research and engineering</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2026 — 2028</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-kicker" data-i18n="education">Education</span>
+              <h3 data-i18n="cwnuTitle">Changwon National University</h3>
+              <p data-i18n="cwnuDesc">Graduate study · IRAS Lab · Multi-Agent Source Term Estimation</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date" data-i18n="present">Experience</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-kicker" data-i18n="industry">Industry</span>
+              <h3>Flutek</h3>
+              <p data-i18n="flutekDesc">Industry experience in South Gyeongsang, Republic of Korea.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="credential-grid reveal">
+          <article>
+            <span class="credential-year">2025</span>
+            <h3>TOEIC 925</h3>
+            <p>ETS · valid through Feb. 2027</p>
+          </article>
+          <article>
+            <span class="credential-year">2025</span>
+            <h3>TOEIC Speaking IH</h3>
+            <p>ETS · valid through Apr. 2027</p>
+          </article>
+          <article>
+            <span class="credential-year">2022</span>
+            <h3>Autodesk Certified User</h3>
+            <p>Autodesk</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow" data-i18n="publicationsEyebrow">Selected Work</p>
+          <h2 data-i18n="publicationsTitle">Publications & conference work</h2>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-card reveal">
+            <div class="publication-year">2026</div>
+            <div class="publication-body">
+              <span class="publication-type" data-i18n="conferencePaper">Conference paper</span>
+              <h3 data-i18n="pub1Title">Scalable and Robust Gas Source Localization via Attention-Enhanced Multi-Agent Reinforcement Learning</h3>
+              <p>Chae Won Lim, Min Gyu Park · The Korean Society for Aeronautical & Space Sciences, Spring Conference 2026</p>
+              <div class="publication-actions">
+                <a href="https://ksas.or.kr/proceedings/2026a/SessionPaperList.asp?code=2549" target="_blank" rel="noopener" data-i18n="viewProceedings">View proceedings ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-card reveal">
+            <div class="publication-year">2025</div>
+            <div class="publication-body">
+              <span class="publication-type" data-i18n="conferencePaper">Conference paper</span>
+              <h3 data-i18n="pub2Title">A Study on Artificial Intelligence for Fault Detection in 3D Printing Systems</h3>
+              <p>Chae Won Lim, Min Gyu Park · KICS Winter Conference 2025</p>
+              <div class="publication-actions">
+                <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12132461" target="_blank" rel="noopener" data-i18n="viewPaper">View paper ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="toolbox">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow" data-i18n="toolboxEyebrow">Toolbox</p>
+          <h2 data-i18n="toolboxTitle">Technologies I work with</h2>
+        </div>
+        <div class="skills-cloud reveal">
+          <span>Python</span><span>PyTorch</span><span>ROS 2</span><span>MATLAB</span><span>Reinforcement Learning</span>
+          <span>Computer Vision</span><span>Open3D</span><span>RGB-D</span><span>Robot Control</span><span>Git</span>
+          <span>CAD / Fusion 360</span><span>Multi-Agent Systems</span><span>VLA / VLM</span><span>World Models</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Interested in research, robotics, or collaboration?</h2>
+          <p data-i18n="contactIntro">The best public way to reach me is through LinkedIn. You can also explore the IRAS laboratory website for research-group information.</p>
+        </div>
+        <div class="contact-card reveal">
+          <a class="contact-row" href="https://www.linkedin.com/in/chae-won-lim/" target="_blank" rel="noopener">
+            <span>LinkedIn</span><strong>/in/chae-won-lim ↗</strong>
+          </a>
+          <a class="contact-row" href="https://sites.google.com/view/iras-cwnu/" target="_blank" rel="noopener">
+            <span>Research Lab</span><strong>IRAS · CWNU ↗</strong>
+          </a>
+          <div class="contact-row">
+            <span data-i18n="location">Location</span><strong>Changwon, Republic of Korea</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Chae Won Lim</strong>
+        <p data-i18n="footerTagline">AI · Robotics · Intelligent Physical Systems</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top" data-i18n="backTop">Back to top ↑</a>
+        <span>© <span id="year"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+const translations = {
+  en: {
+    navAbout: 'About', navResearch: 'Research', navExperience: 'Experience', navPublications: 'Publications', navContact: 'Contact',
+    heroEyebrow: 'AI & Robotics Researcher · Changwon, Korea',
+    heroLine1: 'Building intelligent systems', heroLine2: 'that sense, learn, and act.',
+    heroLead: 'I study how learning-based agents can make robust decisions in the physical world, with interests spanning multi-agent reinforcement learning, Physical AI, robot learning, and autonomous robotic systems.',
+    exploreResearch: 'Explore my research', affiliationLabel: 'Affiliation', affiliationValue: 'Changwon National University · IRAS Lab',
+    focusLabel: 'Current focus', focusValue: 'Multi-Agent RL · Physical AI', statusText: 'Researching intelligent physical systems',
+    profileTagline: 'Researcher working at the intersection of AI, robotics, and autonomous decision-making.', selectedWork: 'Selected work ↓',
+    aboutEyebrow: 'About', aboutTitle: 'Research at the boundary between intelligence and the physical world.',
+    aboutP1: 'I am an AI and robotics researcher at Changwon National University. My work focuses on learning-based decision-making for autonomous systems, especially problems where multiple agents must collaborate under uncertainty.',
+    aboutP2: 'I am particularly interested in making AI useful beyond simulation: connecting perception, reasoning, control, and real robotic hardware so that intelligent agents can operate reliably in dynamic environments.',
+    factEducation: 'Graduate study at CWNU', factMARL: 'Multi-agent source localization', factPhysical: 'Physical intelligence & control',
+    researchEyebrow: 'Research', researchTitle: 'What I am exploring', researchIntro: 'My current interests center on learning-enabled autonomy: how robots can understand complex environments, coordinate with one another, and improve through interaction.',
+    r1Title: 'Multi-Agent Reinforcement Learning', r1Text: 'Scalable cooperation and decentralized decision-making for multiple autonomous agents operating under partial observations.',
+    r2Title: 'Physical AI & Robot Learning', r2Text: 'Connecting foundation models, learned world representations, and robot policies to enable adaptable physical-world behavior.',
+    r3Title: 'Robotic Perception & 3D Mapping', r3Text: 'RGB-D perception, multi-view reconstruction, and robot-camera integration for mapping and interaction with real-world surfaces.',
+    r4Title: 'Vision for Intelligent Manufacturing', r4Text: 'Computer-vision methods for detecting manufacturing defects, including deep-learning-based fault detection in 3D printing.',
+    experienceEyebrow: 'Experience & Education', experienceTitle: 'A path across research and engineering', education: 'Education', cwnuTitle: 'Changwon National University', cwnuDesc: 'Graduate study · IRAS Lab · Multi-Agent Source Term Estimation', present: 'Experience', industry: 'Industry', flutekDesc: 'Industry experience in South Gyeongsang, Republic of Korea.',
+    publicationsEyebrow: 'Selected Work', publicationsTitle: 'Publications & conference work', conferencePaper: 'Conference paper',
+    pub1Title: 'Scalable and Robust Gas Source Localization via Attention-Enhanced Multi-Agent Reinforcement Learning',
+    pub2Title: 'A Study on Artificial Intelligence for Fault Detection in 3D Printing Systems', viewProceedings: 'View proceedings ↗', viewPaper: 'View paper ↗',
+    toolboxEyebrow: 'Toolbox', toolboxTitle: 'Technologies I work with', contactEyebrow: 'Contact', contactTitle: 'Interested in research, robotics, or collaboration?',
+    contactIntro: 'The best public way to reach me is through LinkedIn. You can also explore the IRAS laboratory website for research-group information.', location: 'Location', footerTagline: 'AI · Robotics · Intelligent Physical Systems', backTop: 'Back to top ↑'
+  },
+  ko: {
+    navAbout: '소개', navResearch: '연구', navExperience: '경력', navPublications: '논문', navContact: '연락처',
+    heroEyebrow: 'AI · 로보틱스 연구자 · 대한민국 창원',
+    heroLine1: '보고, 배우고, 행동하는', heroLine2: '지능 시스템을 연구합니다.',
+    heroLead: '멀티에이전트 강화학습, Physical AI, 로봇 학습, 자율 로봇 시스템을 중심으로 학습 기반 에이전트가 실제 물리 환경에서 강건하게 의사결정하는 방법을 연구합니다.',
+    exploreResearch: '연구 살펴보기', affiliationLabel: '소속', affiliationValue: '국립창원대학교 · IRAS Lab',
+    focusLabel: '현재 연구', focusValue: 'Multi-Agent RL · Physical AI', statusText: '지능형 물리 시스템 연구 중',
+    profileTagline: 'AI, 로보틱스, 자율 의사결정의 교차점에서 연구하고 있습니다.', selectedWork: '주요 연구 ↓',
+    aboutEyebrow: '소개', aboutTitle: '지능과 물리 세계가 만나는 지점을 연구합니다.',
+    aboutP1: '국립창원대학교에서 AI와 로보틱스를 연구하고 있습니다. 특히 불확실한 환경에서 여러 에이전트가 협업해야 하는 문제를 중심으로 학습 기반 자율 시스템의 의사결정을 연구합니다.',
+    aboutP2: '시뮬레이션을 넘어 실제 환경에서 활용되는 AI에 관심이 있습니다. 인지, 추론, 제어, 실제 로봇 하드웨어를 연결해 동적인 환경에서도 안정적으로 동작하는 지능 시스템을 만드는 것이 목표입니다.',
+    factEducation: '국립창원대학교 대학원', factMARL: '멀티에이전트 누출원 탐색', factPhysical: 'Physical Intelligence · 제어',
+    researchEyebrow: '연구', researchTitle: '현재 탐구하고 있는 분야', researchIntro: '로봇이 복잡한 환경을 이해하고, 서로 협력하며, 상호작용을 통해 개선되는 학습 기반 자율성에 관심을 두고 있습니다.',
+    r1Title: '멀티에이전트 강화학습', r1Text: '부분 관측 환경에서 여러 자율 에이전트가 확장성 있게 협력하고 분산 의사결정을 수행하는 방법을 연구합니다.',
+    r2Title: 'Physical AI & Robot Learning', r2Text: '파운데이션 모델, 월드모델, 로봇 정책을 연결하여 실제 환경에서 적응 가능한 로봇 행동을 만드는 방법을 탐구합니다.',
+    r3Title: '로봇 인지 및 3D 매핑', r3Text: 'RGB-D 인지, 멀티뷰 재구성, 로봇-카메라 통합을 통해 실제 표면을 매핑하고 상호작용하는 시스템을 연구합니다.',
+    r4Title: '지능형 제조를 위한 비전', r4Text: '3D 프린팅 오류 검출을 포함하여 제조 공정의 이상을 탐지하는 딥러닝 기반 컴퓨터비전 기법을 다룹니다.',
+    experienceEyebrow: '경력 & 학력', experienceTitle: '연구와 엔지니어링을 잇는 경험', education: '학력', cwnuTitle: '국립창원대학교', cwnuDesc: '대학원 · IRAS Lab · Multi-Agent Source Term Estimation', present: '경력', industry: '산업 경력', flutekDesc: '대한민국 경상남도 Flutek 경력.',
+    publicationsEyebrow: '주요 성과', publicationsTitle: '논문 및 학술대회 발표', conferencePaper: '학술대회 논문',
+    pub1Title: 'Attention으로 향상된 멀티 에이전트 강화학습을 통한 확장성 있고 견고한 가스 누출원 위치 추정',
+    pub2Title: '인공지능을 활용한 3D 프린팅 오류 탐지 알고리즘에 관한 연구', viewProceedings: '학술대회 보기 ↗', viewPaper: '논문 보기 ↗',
+    toolboxEyebrow: '기술 스택', toolboxTitle: '주요 활용 기술', contactEyebrow: '연락처', contactTitle: '연구, 로봇, 협업에 관해 이야기하고 싶으신가요?',
+    contactIntro: '공개 연락 수단으로는 LinkedIn을 이용할 수 있습니다. 연구실 관련 정보는 IRAS 연구실 홈페이지에서도 확인할 수 있습니다.', location: '위치', footerTagline: 'AI · Robotics · Intelligent Physical Systems', backTop: '맨 위로 ↑'
+  }
+};
+
+const root = document.documentElement;
+const header = document.querySelector('.site-header');
+const nav = document.getElementById('navMenu');
+const navToggle = document.getElementById('navToggle');
+const langToggle = document.getElementById('langToggle');
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+let lang = localStorage.getItem('portfolio-lang') || 'en';
+let theme = localStorage.getItem('portfolio-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+function applyLanguage() {
+  document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  langToggle.textContent = lang === 'en' ? 'KR' : 'EN';
+}
+
+function applyTheme() {
+  root.setAttribute('data-theme', theme);
+  themeIcon.textContent = theme === 'dark' ? '☀' : '◐';
+}
+
+langToggle.addEventListener('click', () => {
+  lang = lang === 'en' ? 'ko' : 'en';
+  localStorage.setItem('portfolio-lang', lang);
+  applyLanguage();
+});
+
+themeToggle.addEventListener('click', () => {
+  theme = theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('portfolio-theme', theme);
+  applyTheme();
+});
+
+navToggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.nav a').forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 24), { passive: true });
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+applyLanguage();
+applyTheme();
+
+  </script>
+</body>
+</html>
