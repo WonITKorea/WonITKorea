@@ -1,0 +1,47 @@
+# Chae Won Lim — Personal Research Portfolio
+
+A responsive static personal website for Chae Won Lim.
+
+## Files
+
+- `index.html` — main website
+- `assets/styles.css` — layout and visual design
+- `assets/script.js` — language toggle, dark mode, mobile navigation, reveal animations
+- `assets/favicon.svg` — favicon
+
+## Included sections
+
+- Hero / profile
+- About
+- Research interests
+- Experience & education
+- Certifications
+- Publications & conference work
+- Technology stack
+- Contact
+
+## Features
+
+- English / Korean language toggle
+- Light / dark theme toggle
+- Fully responsive mobile layout
+- No build tool or server required
+- Deployable directly to Netlify, GitHub Pages, Cloudflare Pages, Vercel, or any static web host
+
+## Run locally
+
+Double-click `index.html`, or run a simple local server:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Easy editing
+
+Most visible text is in `index.html`. The Korean/English translations are in `assets/script.js` under `translations`.
+
+## Notes
+
+The site intentionally does not invent a job title, email address, portrait, or other personal data that was not publicly verified. Replace the CWL visual block with a profile image later if desired.

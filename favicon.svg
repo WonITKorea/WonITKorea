@@ -1,0 +1,117 @@
+const translations = {
+  en: {
+    navAbout: 'About', navResearch: 'Research', navExperience: 'Experience', navPublications: 'Publications', navContact: 'Contact',
+    heroEyebrow: 'AI & Robotics Researcher · Changwon, Korea',
+    heroLine1: 'Building intelligent systems', heroLine2: 'that sense, learn, and act.',
+    heroLead: 'I study how learning-based agents can make robust decisions in the physical world, with interests spanning multi-agent reinforcement learning, Physical AI, robot learning, and autonomous robotic systems.',
+    exploreResearch: 'Explore my research', affiliationLabel: 'Affiliation', affiliationValue: 'Changwon National University · IRAS Lab',
+    focusLabel: 'Current focus', focusValue: 'Multi-Agent RL · Physical AI', statusText: 'Researching intelligent physical systems',
+    profileTagline: 'Researcher working at the intersection of AI, robotics, and autonomous decision-making.', selectedWork: 'Selected work ↓',
+    aboutEyebrow: 'About', aboutTitle: 'Research at the boundary between intelligence and the physical world.',
+    aboutP1: 'I am an AI and robotics researcher at Changwon National University. My work focuses on learning-based decision-making for autonomous systems, especially problems where multiple agents must collaborate under uncertainty.',
+    aboutP2: 'I am particularly interested in making AI useful beyond simulation: connecting perception, reasoning, control, and real robotic hardware so that intelligent agents can operate reliably in dynamic environments.',
+    factEducation: 'Graduate study at CWNU', factMARL: 'Multi-agent source localization', factPhysical: 'Physical intelligence & control',
+    researchEyebrow: 'Research', researchTitle: 'What I am exploring', researchIntro: 'My current interests center on learning-enabled autonomy: how robots can understand complex environments, coordinate with one another, and improve through interaction.',
+    r1Title: 'Multi-Agent Reinforcement Learning', r1Text: 'Scalable cooperation and decentralized decision-making for multiple autonomous agents operating under partial observations.',
+    r2Title: 'Physical AI & Robot Learning', r2Text: 'Connecting foundation models, learned world representations, and robot policies to enable adaptable physical-world behavior.',
+    r3Title: 'Robotic Perception & 3D Mapping', r3Text: 'RGB-D perception, multi-view reconstruction, and robot-camera integration for mapping and interaction with real-world surfaces.',
+    r4Title: 'Vision for Intelligent Manufacturing', r4Text: 'Computer-vision methods for detecting manufacturing defects, including deep-learning-based fault detection in 3D printing.',
+    experienceEyebrow: 'Experience & Education', experienceTitle: 'A path across research and engineering', education: 'Education', cwnuTitle: 'Changwon National University', cwnuDesc: 'Graduate study · IRAS Lab · Multi-Agent Source Term Estimation', present: 'Experience', industry: 'Industry', flutekDesc: 'Industry experience in South Gyeongsang, Republic of Korea.',
+    publicationsEyebrow: 'Selected Work', publicationsTitle: 'Publications & conference work', conferencePaper: 'Conference paper',
+    pub1Title: 'Scalable and Robust Gas Source Localization via Attention-Enhanced Multi-Agent Reinforcement Learning',
+    pub2Title: 'A Study on Artificial Intelligence for Fault Detection in 3D Printing Systems', viewProceedings: 'View proceedings ↗', viewPaper: 'View paper ↗',
+    toolboxEyebrow: 'Toolbox', toolboxTitle: 'Technologies I work with', contactEyebrow: 'Contact', contactTitle: 'Interested in research, robotics, or collaboration?',
+    contactIntro: 'The best public way to reach me is through LinkedIn. You can also explore the IRAS laboratory website for research-group information.', location: 'Location', footerTagline: 'AI · Robotics · Intelligent Physical Systems', backTop: 'Back to top ↑'
+  },
+  ko: {
+    navAbout: '소개', navResearch: '연구', navExperience: '경력', navPublications: '논문', navContact: '연락처',
+    heroEyebrow: 'AI · 로보틱스 연구자 · 대한민국 창원',
+    heroLine1: '보고, 배우고, 행동하는', heroLine2: '지능 시스템을 연구합니다.',
+    heroLead: '멀티에이전트 강화학습, Physical AI, 로봇 학습, 자율 로봇 시스템을 중심으로 학습 기반 에이전트가 실제 물리 환경에서 강건하게 의사결정하는 방법을 연구합니다.',
+    exploreResearch: '연구 살펴보기', affiliationLabel: '소속', affiliationValue: '국립창원대학교 · IRAS Lab',
+    focusLabel: '현재 연구', focusValue: 'Multi-Agent RL · Physical AI', statusText: '지능형 물리 시스템 연구 중',
+    profileTagline: 'AI, 로보틱스, 자율 의사결정의 교차점에서 연구하고 있습니다.', selectedWork: '주요 연구 ↓',
+    aboutEyebrow: '소개', aboutTitle: '지능과 물리 세계가 만나는 지점을 연구합니다.',
+    aboutP1: '국립창원대학교에서 AI와 로보틱스를 연구하고 있습니다. 특히 불확실한 환경에서 여러 에이전트가 협업해야 하는 문제를 중심으로 학습 기반 자율 시스템의 의사결정을 연구합니다.',
+    aboutP2: '시뮬레이션을 넘어 실제 환경에서 활용되는 AI에 관심이 있습니다. 인지, 추론, 제어, 실제 로봇 하드웨어를 연결해 동적인 환경에서도 안정적으로 동작하는 지능 시스템을 만드는 것이 목표입니다.',
+    factEducation: '국립창원대학교 대학원', factMARL: '멀티에이전트 누출원 탐색', factPhysical: 'Physical Intelligence · 제어',
+    researchEyebrow: '연구', researchTitle: '현재 탐구하고 있는 분야', researchIntro: '로봇이 복잡한 환경을 이해하고, 서로 협력하며, 상호작용을 통해 개선되는 학습 기반 자율성에 관심을 두고 있습니다.',
+    r1Title: '멀티에이전트 강화학습', r1Text: '부분 관측 환경에서 여러 자율 에이전트가 확장성 있게 협력하고 분산 의사결정을 수행하는 방법을 연구합니다.',
+    r2Title: 'Physical AI & Robot Learning', r2Text: '파운데이션 모델, 월드모델, 로봇 정책을 연결하여 실제 환경에서 적응 가능한 로봇 행동을 만드는 방법을 탐구합니다.',
+    r3Title: '로봇 인지 및 3D 매핑', r3Text: 'RGB-D 인지, 멀티뷰 재구성, 로봇-카메라 통합을 통해 실제 표면을 매핑하고 상호작용하는 시스템을 연구합니다.',
+    r4Title: '지능형 제조를 위한 비전', r4Text: '3D 프린팅 오류 검출을 포함하여 제조 공정의 이상을 탐지하는 딥러닝 기반 컴퓨터비전 기법을 다룹니다.',
+    experienceEyebrow: '경력 & 학력', experienceTitle: '연구와 엔지니어링을 잇는 경험', education: '학력', cwnuTitle: '국립창원대학교', cwnuDesc: '대학원 · IRAS Lab · Multi-Agent Source Term Estimation', present: '경력', industry: '산업 경력', flutekDesc: '대한민국 경상남도 Flutek 경력.',
+    publicationsEyebrow: '주요 성과', publicationsTitle: '논문 및 학술대회 발표', conferencePaper: '학술대회 논문',
+    pub1Title: 'Attention으로 향상된 멀티 에이전트 강화학습을 통한 확장성 있고 견고한 가스 누출원 위치 추정',
+    pub2Title: '인공지능을 활용한 3D 프린팅 오류 탐지 알고리즘에 관한 연구', viewProceedings: '학술대회 보기 ↗', viewPaper: '논문 보기 ↗',
+    toolboxEyebrow: '기술 스택', toolboxTitle: '주요 활용 기술', contactEyebrow: '연락처', contactTitle: '연구, 로봇, 협업에 관해 이야기하고 싶으신가요?',
+    contactIntro: '공개 연락 수단으로는 LinkedIn을 이용할 수 있습니다. 연구실 관련 정보는 IRAS 연구실 홈페이지에서도 확인할 수 있습니다.', location: '위치', footerTagline: 'AI · Robotics · Intelligent Physical Systems', backTop: '맨 위로 ↑'
+  }
+};
+
+const root = document.documentElement;
+const header = document.querySelector('.site-header');
+const nav = document.getElementById('navMenu');
+const navToggle = document.getElementById('navToggle');
+const langToggle = document.getElementById('langToggle');
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+let lang = localStorage.getItem('portfolio-lang') || 'en';
+let theme = localStorage.getItem('portfolio-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+function applyLanguage() {
+  document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  langToggle.textContent = lang === 'en' ? 'KR' : 'EN';
+}
+
+function applyTheme() {
+  root.setAttribute('data-theme', theme);
+  themeIcon.textContent = theme === 'dark' ? '☀' : '◐';
+}
+
+langToggle.addEventListener('click', () => {
+  lang = lang === 'en' ? 'ko' : 'en';
+  localStorage.setItem('portfolio-lang', lang);
+  applyLanguage();
+});
+
+themeToggle.addEventListener('click', () => {
+  theme = theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('portfolio-theme', theme);
+  applyTheme();
+});
+
+navToggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.nav a').forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 24), { passive: true });
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+applyLanguage();
+applyTheme();
