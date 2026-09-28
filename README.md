@@ -1,17 +1,23 @@
-# Chae Won Lim Portfolio — GitHub Pages root package
+## Lim Chaewon
 
-Upload the CONTENTS of this folder directly to the root of the GitHub Pages publishing branch.
+### Smart Manufacturing Engineering Major
+at Changwon National University
 
-Required root layout:
+### SKID: Formula Student Team @skid_cwnu
+Marketing Lead & EFS-25 Electric
+in Changwon National University
 
-- index.html
-- about.html
-- research.html
-- creative.html
-- gallery.html
-- publications.html
-- toolbox.html
-- contact.html
-- .nojekyll
+<!--
+**WonITKorea/WonITKorea** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Do not rename gallery.html to index.html. Do not upload the zip itself; extract it first.
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
